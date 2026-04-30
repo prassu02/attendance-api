@@ -1,5 +1,8 @@
 from fastapi import FastAPI
 from src.routers import auth, sessions, attendance, monitoring
+from src.database import Base, engine
+
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
