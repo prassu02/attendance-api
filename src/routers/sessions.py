@@ -5,4 +5,4 @@ router = APIRouter()
 
 @router.post("/sessions")
 def create_session(user=Depends(role_required(["trainer"]))):
-    return {"message": "Session Created"}
+    return {"message": "Session created"}

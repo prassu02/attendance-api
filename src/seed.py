@@ -1,2 +1,5 @@
 def seed():
-    print("Seeding data...")
+    print("Seed executed")
+
+if __name__ == "__main__":
+    seed()
